@@ -1,0 +1,189 @@
+:root{
+--strongCyan :hsl(172, 67%, 45%);
+--darkCyan:hsl(183, 100%, 15%);
+--DgrayishCyan:hsl(186, 14%, 43%);
+--GrayishCyan:rgb(127, 156, 159);
+--LgrayishCyan:hsl(185, 41%, 84%);
+--VLgrayishCyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    background-color: var(--LgrayishCyan);
+    box-sizing: border-box;
+    height:auto;
+    width: auto;
+    margin:0 auto;
+    
+
+}
+.logo{
+    display: flex;
+    width: auto;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#logoDiv{
+    margin:50%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mainDiv{
+    background-color: var(--White);
+    max-width:450px;
+    height:auto;
+    padding: 10px;
+    border-radius:20px 20px 0  0;
+}
+
+#billInput{
+    background-color: inherit;
+    margin: 20px;
+}
+
+label{
+    background-color:inherit;
+    color:var(--DgrayishCyan);
+    font-size: 20px;
+    font-weight:bold;
+    margin-left: 10px;
+}
+
+input{
+    background-color:var(--VLgrayishCyan) ;
+    color: var(--darkCyan);
+    font-weight: 700;
+    padding: 7px;
+    border: none;
+    margin: 5px 0 30px 0;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 24px;
+    outline: none;
+    text-align: right;
+
+}
+
+#amtBill{
+    background-image:
+     url(/tip\ folder/Tip-calculator/Images/images/icon-dollar.svg);
+     background-repeat: no-repeat;
+    background-size:initial;
+    background-position:7% 50%;
+    margin-left: 8px;
+    width: 95%;
+}
+
+.percBtn{
+    background-color: inherit;
+    display:grid;
+    grid-template-columns: repeat(2,2fr);
+    margin-bottom: 15px;
+}
+
+.tipPercentage,#customPerc{
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    width: 90%;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--darkCyan);
+}
+
+.tipPercentage:active{
+    background-color: var(--strongCyan);
+    color: var(--darkCyan);
+}
+
+#customPerc{
+    background-color: var(--VLgrayishCyan);
+    color: var(--DgrayishCyan);
+}
+
+#noPple{ 
+    background-image:
+     url(/tip\ folder/Tip-calculator/Images/images/icon-person.svg);
+     background-repeat: no-repeat;
+    background-size:initial;
+    background-position:7% 50%;
+    margin-left: 8px;
+    width:95%;
+}
+
+
+#billOutput{
+    background-color: var(--darkCyan);
+    height:auto;
+    margin:0 auto;
+    width:100%;
+    padding:20px 20px 20px 20px;
+    border-radius:20px 20px 20px 20px ;
+    
+}
+
+.paraDiv1,.paraDiv2{
+    background-color:inherit;
+    display: flex;
+    padding: 5px;
+    width:100%;
+    color: var(--White);
+    justify-content: space-between;
+  
+}
+
+.paraDiv1>p,.paraDiv2>p{
+    background-color:inherit;
+    padding: 5px;
+}
+
+#para1{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+#para1>span,#paraTwo>span{
+    background-color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--GrayishCyan);
+}
+#paraTwo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--strongCyan);
+    text-align: right;
+}
+
+#paraTwo2>span{
+    background-color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--GrayishCyan);
+}
+
+#paraTwo2{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--strongCyan);
+    text-align:right;
+}
+
+#resetBtn{
+    background-color: var(--strongCyan);
+    border: none;
+    color: var(--darkCyan);
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    width:100%;
+    border-radius:9px;
+    text-transform: uppercase;
+}
+
